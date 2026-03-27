@@ -5,6 +5,7 @@ from torch import nn
 import torchvision.transforms as transforms
 import os, json
 
+
 class MyCNNModel(nn.Module):
 
     def __init__(self):
@@ -118,7 +119,7 @@ transform = transforms.Compose([
 
 st.title("FashionMNIST")
 
-
+st.file_uploader("이미지를 업로드 하세요", type=['png', 'jpg', 'jped'])
 
 
 
